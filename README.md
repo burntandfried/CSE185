@@ -3,7 +3,7 @@ This is the project for CSE185, done by Jade Chng, Ananya Prasad and Anna-Sophia
 
 # Install instrcutions
 
-# Basic Usage Instrcutions 
+# Basic Usage Instructions 
 
 # Complete Usage Instructions 
 
