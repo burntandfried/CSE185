@@ -1,5 +1,5 @@
-##Benchmarking mybwa to exisitng bwa 
+## Benchmarking mybwa to exisitng bwa 
 
-##Timing 
+## Timing 
 
-##Memory Usage
+## Memory Usage
