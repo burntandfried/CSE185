@@ -4,23 +4,31 @@ This is the project for CSE185, done by Jade Chng, Ananya Prasad and Anna-Sophia
 # Install Instructions
 
 # Basic Usage Instructions 
-The basic usage of myBwa is: 
+The basic usage of mybwa is: 
 
 ```
-python myBwa.py <genome_fasta> <reads_fastq>
+python mybwa.py <genome_fasta> <reads_fastq>
 ```
 
-you can run myBwa on the provded fasta and fastq files located in the example_files folder.
+you can run mybwa on the provded fasta and fastq files located in the example_files folder.
 
 for example: 
 
 ```
-python myBwa.py hg19chr1.fa reads50.fq
+python mybwa.py hg19chr1.fa reads50.fq
 ```
 
 This should produce the output: 
 
+```
+0       CTAAACCCTAAACCCTAACCCTAACCCTAACCCTAACCCTAACCCCAACC       245
+1       CAGTGCACATATACTTGTTTCCCAACCTATTCTCAACTAAAGCCGATTGA
+2       CGGTGTGGCGTGGTGCCCGTTACCCGGCTGCAGGTTCACAGAAATCTCAC
+3       CATAATTATACCGGCCGTCACAGCGTCGTAATTCCATAATAATAACCCGC
+4       GTTGTGGCAGGAGGTGCCGCATCTCCAACAAGGTCGAAGTCGCAAAAGAC
+5       TGCCTTCGGTCGAGGGTGGGGGGACCCACTAAAGTGTCGAGTAGCCACTA
 
+```
 
 # File format 
 Genome file: A fasta file with the first line being a header line followed by a single string that represents the database to be queried on the next line.\
