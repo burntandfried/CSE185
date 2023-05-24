@@ -18,7 +18,7 @@ for example:
 python mybwa.py hg19chr1.fa reads50.fq
 ```
 
-This should produce the output: 
+This should produce to standard output: 
 
 ```
 0       CTAAACCCTAAACCCTAACCCTAACCCTAACCCTAACCCTAACCCCAACC       245
