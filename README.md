@@ -4,7 +4,7 @@ This is the project for CSE185, done by Jade Chng, Ananya Prasad and Anna-Sophia
 # Install Instructions
 
 # Basic Usage Instructions 
-'python myBwa.py <genome fasta> <reads fastq>'
+python myBwa.py genome_fasta reads_fastq
 
 # File format 
 Genome file: A fasta file with the first line being a header line followed by a single string that represents the database to be queried on the next line.\
