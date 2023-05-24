@@ -29,6 +29,9 @@ This should produce the output:
 5       TGCCTTCGGTCGAGGGTGGGGGGACCCACTAAAGTGTCGAGTAGCCACTA
 
 ```
+The first column is the read name, the second is the read and the columns after would be the position/index (0-based) that the match was found. 
+
+
 
 # File format 
 Genome file: A fasta file with the first line being a header line followed by a single string that represents the database to be queried on the next line.\
