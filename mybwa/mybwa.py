@@ -6,10 +6,17 @@
 import sys
 if len(sys.argv) == 3:
     genomeFile = sys.argv[1]
+    if '.fa' not in genomeFile and '.fasta' not in genomeFile:
+        print('Reference genome must be a fasta file')
+        sys.exit(1)
+        
     readsFile = sys.argv[2]
+    if '.fq' not in readsFile and '.fastq' not in readsFile:
+        print('Reads must be in a fastq file')
+        sys.exit(1)
 else:
     print('Unable to run, please use the following format:')
-    print('myBwa genome.fa reads.fq')
+    print('python myBwa.py genome.fa reads.fq')
     sys.exit(1)
 
 
@@ -20,7 +27,10 @@ with open(genomeFile, 'r') as file:
         line = line.strip()
         genome = genome + line
 
-
+if len(genome) == 0:
+    print('Reference genome file is empty')
+    sys.exit(1)
+    
 # In[16]:
 
 
@@ -82,7 +92,9 @@ with open(readsFile, 'r') as file:
 
 # In[ ]:
 
-
+if len(readDict) == 0:
+    print('Reads file is empty')
+    sys.exit(1)
 
 
 
