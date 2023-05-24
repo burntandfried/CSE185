@@ -5,7 +5,6 @@ This is the project for CSE185, done by Jade Chng, Ananya Prasad and Anna-Sophia
 
 # Basic Usage Instructions 
 
-# Complete Usage Instructions 
 
 # File format 
 Genome file: A fasta file with the first line being a header line followed by a single string that represents the database to be queried on the next line.\
