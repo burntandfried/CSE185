@@ -1,8 +1,6 @@
 # CSE185-BWA-project
 This is the project for CSE185, done by Jade Chng, Ananya Prasad and Anna-Sophia Dinov. It implements a Burrows-Wheeler Transfrom to index the reference genome and then performs Burrows Wheeler Alignment to align reads to the genome. 
 
-# Install Instructions
-
 # Basic Usage Instructions 
 The basic usage of mybwa is: 
 
