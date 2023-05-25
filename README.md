@@ -38,7 +38,7 @@ Genome file: A fasta file with the first line being a header line followed by a 
 Query file: A fastq file where lines with the query sequence are a single string (no new line or space characters)
 
 # Implementation Details
-We optimized our Burrow's Wheeler alignment by...
+The standard algorithm for BWT alignment uses high and low pointers to search the BWT for reads and uses the suffix array of the genome to determine the positions where any matches occurred. To optimize this exact read matching, we implemented the alignment using a Count dictionary, which for each possible symbol (A, C, G, and T), stores an array whose value at position i is the sum of the number of times that symbol occurs in the first i positions of the BWT. This stores information that is used to update the high and low pointers more efficiently, which lowers the amount of time needed to search for each query, and therefore speeds up the runtime of our alignment algorithm.
 
 # Contributors 
 
