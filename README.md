@@ -8,12 +8,14 @@ The basic usage of mybwa is:
 python mybwa.py <genome_fasta> <reads_fastq>
 ```
 
-you can run mybwa on the provded fasta and fastq files located in the example_files folder.
+Download our code as a ZIP, then extract all (or unzip) the folder so that you have all of the necessary code in the correct folders.
 
-for example: 
+You can run mybwa on the provded fasta and fastq files located in the example_files folder.
+
+For example, from within the mybwa directory, run the following command: 
 
 ```
-python mybwa.py hg19chr1.fa reads50.fq
+python mybwa.py ../example-files/hg19chr1.fa ../example-files/reads50.fq
 ```
 
 This should produce to standard output: 
@@ -27,7 +29,7 @@ This should produce to standard output:
 5       TGCCTTCGGTCGAGGGTGGGGGGACCCACTAAAGTGTCGAGTAGCCACTA
 
 ```
-The first column is the read name, the second is the read and the columns after would be the position/index (0-based) that the match was found. 
+The first column is the read name, the second is the read and the columns after would be the position/index (0-based) that the match was found (empty if no match found).
 
 
 
