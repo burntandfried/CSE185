@@ -8,12 +8,20 @@ The basic usage of mybwa is:
 python mybwa.py <genome_fasta> <reads_fastq>
 ```
 
-Download our code as a ZIP, then extract all (or unzip) the folder so that you have all of the necessary code in the correct folders.
+Follow these steps to run our BWT alignment:
 
-You can run mybwa on the provded fasta and fastq files located in the example_files folder.
+1. Clone our repository
+```
+git clone https://github.com/burntandfried/CSE185.git
+```
 
-For example, from within the mybwa directory, run the following command: 
+2. Nagivate to the mybwa directory
+```
+cd CSE185
+cd mybwa
+```
 
+3. Run mybwa on the provded fasta and fastq files located in the example_files folder. From within the mybwa directory, run the following command: 
 ```
 python mybwa.py ../example-files/hg19chr1.fa ../example-files/reads50.fq
 ```
