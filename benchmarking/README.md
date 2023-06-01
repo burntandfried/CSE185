@@ -41,7 +41,7 @@ mybwa command:
 ```
 python mybwa.py <genome_fasta> <reads_fastq>
 ```
-bwa: 
+bwa command: 
 ```
 time bwa index <genome_fasta>
 time bwa mem  <genome_fasta> <reads_fastq> > output.sam
