@@ -6,10 +6,10 @@ To get the timing for mybwa:
 time python mybwa.py <genome_fasta> <reads_fastq>
 ```
 To get the timing for existing bwa: 
-``
+```
 time bwa index <genome_fasta>
 time bwa mem  <genome_fasta> <reads_fastq> > output.sam
-``
+```
 We have to run to commands for the exisitng bwa as mybwa combines the bwt and aligning of the reads in one command, while the exisiting bwa does not. Hence, we would have to add the resulting time from the 2 commands for the exisitng bwa to compare it to mybwa.
 
 ### Example comparison: 
