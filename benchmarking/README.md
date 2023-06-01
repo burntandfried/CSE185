@@ -47,7 +47,7 @@ time bwa index <genome_fasta>
 time bwa mem  <genome_fasta> <reads_fastq> > output.sam
 ```
 
-### example 
+### Example benchmarking
 ```
 python mybwa.py hg19chr1.fa reads50.fq
 
@@ -65,8 +65,17 @@ bwa index hg19chr1.fa
 bwa mem hg19chr1.fa reads50.fq > output.sam
 
 output in sam file: 
+M::process] read 6 sequences (300 bp)...
+[M::mem_process_seqs] Processed 6 reads in 0.002 CPU sec, 0.001 real sec
+0       0       hg19_chr1_fragment      246     50      50M     *       0       0       CTAAACCCTAAACCCTAACCCTAACCCTAACCCTAACCCTAACCCCAACC CTAAACCCTAAACCCTAACCCTAACCCTAACCCTAACCCTAACCCCAACC      NM:i:0  MD:Z:50 AS:i:50 XS:i:36
+1       4       *       0       0       *       *       0       0       CAGTGCACATATACTTGTTTCCCAACCTATTCTCAACTAAAGCCGATTGACTAAACCCTAAACCCTAACCCTAACCCTAACCCTAACCCTAACCCCAACC       AS:i:0  XS:i:0
+2       4       *       0       0       *       *       0       0       CGGTGTGGCGTGGTGCCCGTTACCCGGCTGCAGGTTCACAGAAATCTCACCTAAACCCTAAACCCTAACCCTAACCCTAACCCTAACCCTAACCCCAACC       AS:i:0  XS:i:0
+3       4       *       0       0       *       *       0       0       CATAATTATACCGGCCGTCACAGCGTCGTAATTCCATAATAATAACCCGCCTAAACCCTAAACCCTAACCCTAACCCTAACCCTAACCCTAACCCCAACC       AS:i:0  XS:i:0
+4       4       *       0       0       *       *       0       0       GTTGTGGCAGGAGGTGCCGCATCTCCAACAAGGTCGAAGTCGCAAAAGACCTAAACCCTAAACCCTAACCCTAACCCTAACCCTAACCCTAACCCCAACC       AS:i:0  XS:i:0
+5       4       *       0       0       *       *       0       0       TGCCTTCGGTCGAGGGTGGGGGGACCCACTAAAGTGTCGAGTAGCCACTACTAAACCCTAAACCCTAACCCTAACCCTAACCCTAACCCTAACCCCAACC       AS:i:0  XS:i:0
 
 ```
+As we can see, mybwa aligns the reads to position 245 and bwa aligns it to 246. This is because the implementation of mybwa uses 0 indexing while the exisiting bwa uses one indexing. 
 
 
 
