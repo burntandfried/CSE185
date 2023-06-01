@@ -8,7 +8,7 @@ time python mybwa.py <genome_fasta> <reads_fastq>
 To get the timing for existing bwa: 
 ```
 time bwa index <genome_fasta>
-time bwa mem  <genome_fasta> <reads_fastq> > output.sam
+time bwa mem  <genome_fasta> <reads_fastq>
 ```
 We have to run to commands for the exisitng bwa as mybwa combines the bwt and aligning of the reads in one command, while the exisiting bwa does not. Hence, we would have to add the resulting time from the 2 commands for the exisitng bwa to compare it to mybwa.
 
@@ -24,7 +24,7 @@ sys   0m0.071s
 ```
 ```
 time bwa index hg19chr1.fa
-time bwa mem hg19chr1.fa reads50.fq > output.sam
+time bwa mem hg19chr1.fa reads50.fq
 ```
 output: 
 ```
@@ -62,9 +62,9 @@ output:
 ```
 ```
 bwa index hg19chr1.fa
-bwa mem hg19chr1.fa reads50.fq > output.sam
+bwa mem hg19chr1.fa reads50.fq
 
-output in sam file: 
+output: 
 M::process] read 6 sequences (300 bp)...
 [M::mem_process_seqs] Processed 6 reads in 0.002 CPU sec, 0.001 real sec
 0       0       hg19_chr1_fragment      246     50      50M     *       0       0       CTAAACCCTAAACCCTAACCCTAACCCTAACCCTAACCCTAACCCCAACC CTAAACCCTAAACCCTAACCCTAACCCTAACCCTAACCCTAACCCCAACC      NM:i:0  MD:Z:50 AS:i:50 XS:i:36
