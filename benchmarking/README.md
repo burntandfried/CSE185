@@ -1,4 +1,4 @@
-## Benchmarking mybwa to exisitng bwa 
+## Benchmarking mybwa to Exisitng BWA index and BWA mem 
 
 ## Timing 
 To get the timing for mybwa: 
@@ -12,7 +12,7 @@ time bwa mem  <genome_fasta> <reads_fastq>
 ```
 We have to run to commands for the exisitng bwa as mybwa combines the bwt and aligning of the reads in one command, while the exisiting bwa does not. Hence, we would have to add the resulting time from the 2 commands for the exisitng bwa to compare it to mybwa.
 
-### Example comparison: 
+### Example Comparison: 
 ```
 time python mybwa.py hg19chr1.fa reads50.fq
 ```
@@ -36,7 +36,7 @@ real    0m0.009s
 user    0m0.004s
 sys     0m0.004s
 ```
-## Comparison of aligned reads
+## Comparison of Aligned Reads
 mybwa command: 
 ```
 python mybwa.py <genome_fasta> <reads_fastq>
@@ -47,7 +47,7 @@ time bwa index <genome_fasta>
 time bwa mem  <genome_fasta> <reads_fastq> > output.sam
 ```
 
-### Example benchmarking
+### Example Benchmarking
 ```
 python mybwa.py hg19chr1.fa reads50.fq
 
